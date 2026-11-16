@@ -1,0 +1,16 @@
+{
+  "name": "reality-forge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local, camera-driven hand-tracking effects playground.",
+  "scripts": {
+    "start": "python3 main.py",
+    "test": "node --test",
+    "setup": "python3 scripts/fetch_deps.py",
+    "smoke": "node tests/smoke.js",
+    "check": "node --test && node tests/smoke.js",
+    "clips": "node scripts/analyse_clips.js"
+  },
+  "type": "module",
+  "license": "MIT"
+}
