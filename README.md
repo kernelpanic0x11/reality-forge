@@ -4,9 +4,12 @@ A local, camera-driven effects playground. Grab glowing objects out of the air w
 
 ## Run
 
-Python 3 and Chrome are enough; the local checkout includes pinned tracking models.
+New here? [docs/GUIDE.md](docs/GUIDE.md) is the step by step version, from download to a recorded take.
+
+Python 3 and Chrome are enough. A fresh clone needs the pinned tracking models downloaded once:
 
 ```sh
+python3 scripts/fetch_deps.py   # once: downloads and verifies vendor/
 python3 main.py
 ```
 
@@ -104,7 +107,7 @@ src/
   render.js        Canvas drawing and compositing: camera, masks, occlusion, cast light, overlays
 tests/             Unit tests (*.test.js) and the browser smoke test (smoke.js)
 scripts/           fetch_deps.py restores vendor/ from dependencies.json
-docs/              Prototype history and notes
+docs/              GUIDE.md (step by step setup for new users), prototype history and notes
 dependencies.json  Pinned upstream URLs and SHA-256 hashes
 vendor/            MediaPipe runtime and models, Three.js (local, not in Git)
 assets/            Private recorded fixture (local, not in Git)
